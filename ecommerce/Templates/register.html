@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+          }
+          body {
+            padding: 15px 10px;
+          }
+          form {
+            margin: auto;
+            text-align: center;
+            background-color: rgb(0, 195, 255);
+            width: 400px;
+            height: 100%;
+            padding: 15px 20px;
+            max-width: 100%;
+            border-radius: 10px;
+            font-size: small;
+          }
+          h1,
+          p {
+            margin-bottom: 3px;
+            color: white;
+          }
+          div {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            margin: 5px;
+          }
+          input[type="checkbox"] {
+            margin: 0 5px;
+          }
+          input[type="submit"] {
+            margin: 0 auto;
+            padding: 10px 15px;
+            background-color: rgb(0, 195, 255);
+            border: 1px solid white;
+          }
+          input[type="submit"]:hover {
+            cursor: pointer;
+            background-color: white;
+            color: rgb(0, 195, 255);
+          }
+          label {
+            margin: 5px;
+            cursor: pointer;
+          }
+          input {
+            padding: 10px;
+            outline: none;
+            border: 1px solid transparent;
+            border-radius: 8px;
+            cursor: pointer;
+          }
+        </style>          
+  </head>
+    <body>
+        <form action="/" method="post">
+            <h1>Sign Up</h1>
+            <p>welcome to Sunmade!</p><p>sign up to join our company</p>
+            <div>
+            <label for="name">First Name:</label>
+            <input type="text" name="name" id="name" required>
+        </div>
+        <div><label for="lastName">Last Name:</label> <input type="text" name="lastName" id="lastName"required></div>
+        <div>
+            <label for="password">Password:</label> <input type="password" name="Password" id="Password"required>
+        </div>
+        <div><label for="confirm_password">Confirm Password:</label> <input type="password" name="confirm_password" id="confirm_password"required></label></div>
+        <div><label for="email">Email:</label>
+            <input type="email" name="email" id="email"required>
+        </div>
+        <div><label for="phone_number">Phone Number: </label><input type="tel" name="phone_number" id="phone_number"required></div>
+        <div><label for="license">Read and agree to our license/terms?<input type="checkbox" name="license" id="license" required></label></div>
+        <div><input type="submit" value="Sign Up"></div>
+        </form>
+    </body>
+    </html>
+    
